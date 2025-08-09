@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+</head>
+<body>
+
+  <!-- Title -->
+  <h1 id="title">Customer Satisfaction Survey</h1>
+
+  <!-- Description -->
+  <p id="description">Please take a moment to fill out this survey to help us improve our services.</p>
+
+  <!-- Survey Form -->
+  <form id="survey-form">
+
+    <!-- Name Input -->
+    <label id="name-label" for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+    <!-- Email Input -->
+    <label id="email-label" for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <!-- Number Input -->
+    <label id="number-label" for="number">Age:</label>
+    <input type="number" id="number" name="number" min="10" max="100" placeholder="Enter your age" required>
+
+    <!-- Dropdown -->
+    <label for="dropdown">Which service do you use the most?</label>
+    <select id="dropdown" name="service">
+      <option value="delivery">Delivery</option>
+      <option value="in-store">In-Store Shopping</option>
+      <option value="online">Online Purchase</option>
+    </select>
+
+    <!-- Radio Buttons -->
+    <p>How often do you use our service?</p>
+    <input type="radio" id="daily" name="frequency" value="daily">
+    <label for="daily">Daily</label><br>
+    <input type="radio" id="weekly" name="frequency" value="weekly">
+    <label for="weekly">Weekly</label>
+
+    <!-- Checkboxes -->
+    <p>What do you value most about our service? (Select all that apply)</p>
+    <input type="checkbox" id="quality" name="valueService" value="quality">
+    <label for="quality">Quality</label><br>
+    <input type="checkbox" id="speed" name="valueService" value="speed">
+    <label for="speed">Speed</label><br>
+    <input type="checkbox" id="price" name="valueService" value="price">
+    <label for="price">Price</label>
+
+    <!-- Textarea -->
+    <p>Any additional comments or suggestions?</p>
+    <textarea id="comments" name="comments" rows="4" placeholder="Write your feedback here..."></textarea>
+
+    <!-- Submit Button -->
+    <button type="submit" id="submit">Submit</button>
+
+  </form>
+
+</body>
+</html>
+
+
+** end of index.html **
+
